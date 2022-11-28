@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;700&display=swap');
+
+.light
+{
+  --background:#fff;
+  --text-color:#111;
+}
+
+.dark
+{
+  --background:#111;
+  --text-color:#fff;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.App {
+  background-color: var(--background);
+  color: var(--text-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  left: 100%;
+  overflow: hidden;
+}
+
+.HomeView 
+{
+  position: fixed;
+  top: max(20px, 4vmin);
+  left: max(20px, 4vmin);
+  bottom: max(20px, 4vmin);
+  right: max(20px, 4vmin);
+  border: 2px solid;
+  border-color: var(--text-color);
+  background-color: var(--background);
+}
+
+.ThemeSelector
+{
+  position: fixed;
+  left: max(20px, 4vmin);
+  bottom: max(20px, 4vmin);
+  display: flex;
+  transform: rotate(-90deg);
+  transform-origin: left bottom;
+  column-gap: 15px;
+  cursor: pointer;
+  font-family: 'Source Code Pro', sans-serif;
+  font-weight: 400;
+}
+
+.ThemeColorSelector
+{
+  position: fixed;
+  right: max(20px, 4vmin);
+  top: max(20px, 4vmin);
+  display: flex;
+  column-gap: 15px;
+  cursor: pointer;
+  transform: rotate(270deg);
+  transform-origin: top right;
+  font-family: 'Source Code Pro', sans-serif;
+  font-weight: 400;
+
+}
+
+.ThemeColor {
+  transform: rotate(180deg);
+  transform-origin: center;
+}
