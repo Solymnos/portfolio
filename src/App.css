@@ -4,17 +4,15 @@
   --main-color-background: #0C0C0C;
   --main-color : #D7390A;
   --second-color : #FFFFFF;
-  background-color: var(--main-color-background);
-  height: 100vh;
-  width: 100vw;
-  min-height: 100vh;
-  min-width: 100vw;
 }
 
 .App {
-  text-align: center;
   background-color: var(--main-color-background);
   color: var(--main-color);
+  height: 100vh;
+  min-height: 100vh;
+  width: 100vw;
+  min-width: 100vw;
 }
 
 .Top-Banner {
@@ -50,42 +48,67 @@
   width: 100%;
   transform: rotate(180deg);
 }
+
 .HomeView {
-  height: 100%;
   display: flex;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  min-width: 100%;
+  background-color: var(--main-color-background);
 }
 
-.HomeView>.LeftPart {
-  height: 100vh;
+
+
+.HomeView>.LeftPanel {
+  height: 100%;
   width: 50%;
   display: flex;
-  align-items: center;
 }
 
-.HomeView>.LeftPart>.Content>.Name {
+.HomeView>.LeftPanel>.Content {
+  margin: auto;
+}
+
+.HomeView>.LeftPanel>.Content>.Name {
   font-family: 'Monoton', cursive;
   color: var(--main-color);
   font-size: 130px;
   text-align: left;
-  margin-left: 21%;
   line-height: 120px;
   letter-spacing: 0px;
+  text-size-adjust: 50%;
+  margin-left: 21%;
 }
 
-.HomeView>.LeftPart>.Content>.Subtitle {
+.HomeView>.LeftPanel>.Content>.Subtitle {
   color: var(--second-color);
   margin-left: 21%;
   text-align: left;
   font-size: 30px;
   font-weight: 200;
   margin-top: 50px;
+  text-size-adjust: auto;
 }
 
-.HomeView>.RightPart {
-  height: 100vh;
+.HomeView>.RightPanel {
+  height: 100%;
   width: 50%;
   display: flex;
-  align-items: center;
+  border: solid blue;
+}
 
-  background-color: aqua;
+.HomeView>.RightPanel>.Content {
+  height: fit-content;
+  width: fit-content;  
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid red;
+  text-align: right;
+}
+
+.HomeView>.RightPanel>.Menu {
+  text-align: right;
 }
