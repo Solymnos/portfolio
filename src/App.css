@@ -1,74 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
-.light
-{
-  --background:#fff;
-  --text-color:#111;
-}
-
-.dark
-{
-  --background:#111;
-  --text-color:#fff;
-}
-
-body {
-  background-color: var(--background);
+:root {
+  --main-color-background: #0C0C0C;
+  --main-color : #D7390A;
+  --second-color : #FFFFFF;
+  background-color: var(--main-color-background);
+  height: 100vh;
+  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 .App {
-  background-color: var(--background);
-  color: var(--text-color);
+  text-align: center;
+  background-color: var(--main-color-background);
+  color: var(--main-color);
+}
+
+.Top-Banner {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  left: 100%;
-  overflow: hidden;
 }
 
-.HomeView 
-{
+.First-Rectangle-Banner {
+  width: 100% - 20px;
+  height: 50px;
+  padding: 12px;
+  border: 4px solid var(--main-color);
+  border-bottom: 0;
+  margin: 21px;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+}
+
+.Second-Rectangle-Banner {
+  width: 100% - 20px;
+  height: 38px;
+  padding: 10px;
+  border: 4px solid var(--main-color);
+  border-bottom: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.Bottom-Banner {
   position: fixed;
-  top: max(20px, 4vmin);
-  left: max(20px, 4vmin);
-  bottom: max(20px, 4vmin);
-  right: max(20px, 4vmin);
-  border: 2px solid;
-  border-color: var(--text-color);
-  background-color: var(--background);
-}
-
-.ThemeSelector
-{
-  position: fixed;
-  left: max(20px, 4vmin);
-  bottom: max(20px, 4vmin);
-  display: flex;
-  transform: rotate(-90deg);
-  transform-origin: left bottom;
-  column-gap: 15px;
-  cursor: pointer;
-  font-family: 'Source Code Pro', sans-serif;
-  font-weight: 400;
-}
-
-.ThemeColorSelector
-{
-  position: fixed;
-  right: max(20px, 4vmin);
-  top: max(20px, 4vmin);
-  display: flex;
-  column-gap: 15px;
-  cursor: pointer;
-  transform: rotate(270deg);
-  transform-origin: top right;
-  font-family: 'Source Code Pro', sans-serif;
-  font-weight: 400;
-
-}
-
-.ThemeColor {
+  bottom: 0;
+  width: 100%;
   transform: rotate(180deg);
-  transform-origin: center;
+}
+.HomeView {
+  height: 100%;
+  display: flex;
+}
+
+.HomeView>.LeftPart {
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.HomeView>.LeftPart>.Content>.Name {
+  font-family: 'Monoton', cursive;
+  color: var(--main-color);
+  font-size: 130px;
+  text-align: left;
+  margin-left: 21%;
+  line-height: 120px;
+  letter-spacing: 0px;
+}
+
+.HomeView>.LeftPart>.Content>.Subtitle {
+  color: var(--second-color);
+  margin-left: 21%;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 200;
+  margin-top: 50px;
+}
+
+.HomeView>.RightPart {
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+
+  background-color: aqua;
 }
