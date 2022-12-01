@@ -1,6 +1,7 @@
 import React from 'react';
 import TopBanner from '../components/TopBanner';
-import BottomBanner from '../components/BottomBanner'
+import BottomBanner from '../components/BottomBanner';
+import ListLogo from '../components/ListLogo';
 
 function HomeView() {
   return (
@@ -12,7 +13,7 @@ function HomeView() {
                 CARL AMELINE
             </div>
             <div className='Subtitle'>
-                Développeur fullstack, travaillant actuellement à IIDRE, à la recherche de nouvelles opportunités !
+                Développeur fullstack, travaillant actuellement chez IIDRE, à la recherche de nouvelles opportunités !
             </div>
             </div>
         </div>
@@ -40,6 +41,7 @@ function HomeView() {
                 </div>
             </div>
         </div>
+        <ListLogo />
         <BottomBanner />
     </div>
   )
