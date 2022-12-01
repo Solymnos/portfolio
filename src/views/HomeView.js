@@ -18,23 +18,23 @@ function HomeView() {
         </div>
         <div className='RightPanel'>
             <div className='Content'>
-                <div className='Menu'>
+                <div className='MenuPoint'>
                     <h1>Profil</h1>
                     <h2>01</h2>
                 </div>
-                <div className='Menu'>
-                    <h1>Parcours</h1>
+                <div className='MenuPoint'>
+                    <h1>Parcour</h1>
                     <h2>02</h2>
                 </div>
-                <div className='Menu'>
+                <div className='MenuPoint'>
                     <h1>Compétences</h1>
                     <h2>03</h2>
                 </div>
-                <div className='Menu'>
+                <div className='MenuPoint'>
                     <h1>Projets</h1>
                     <h2>04</h2>
                 </div>
-                <div className='Menu'>
+                <div className='MenuPoint'>
                     <h1>Contacts</h1>
                     <h2>05</h2>
                 </div>
