@@ -1,12 +1,9 @@
 import React from 'react';
-import TopBanner from '../components/TopBanner';
-import BottomBanner from '../components/BottomBanner';
 import ListLogo from '../components/ListLogo';
 
 function HomeView() {
   return (
     <div className='HomeView'>
-        <TopBanner />
         <div className='LeftPanel'>
             <div className='Content'>
             <div className='Name'>
@@ -19,30 +16,39 @@ function HomeView() {
         </div>
         <div className='RightPanel'>
             <div className='Content'>
-                <div className='MenuPoint'>
-                    <h1>Profil</h1>
-                    <h2>01</h2>
-                </div>
-                <div className='MenuPoint'>
-                    <h1>Parcour</h1>
-                    <h2>02</h2>
-                </div>
-                <div className='MenuPoint'>
-                    <h1>Compétences</h1>
-                    <h2>03</h2>
-                </div>
-                <div className='MenuPoint'>
-                    <h1>Projets</h1>
-                    <h2>04</h2>
-                </div>
-                <div className='MenuPoint'>
-                    <h1>Contacts</h1>
-                    <h2>05</h2>
-                </div>
+                <a href='/profile'>
+                    <div className='MenuPoint'>
+                        <h1>Profil</h1>
+                        <h2>01</h2>
+                    </div>
+                </a>
+                <a href='/career'>
+                    <div className='MenuPoint'>
+                        <h1>Parcour</h1>
+                        <h2>02</h2>
+                    </div>
+                </a>
+                <a href='/competences'>
+                    <div className='MenuPoint'>
+                        <h1>Compétences</h1>
+                        <h2>03</h2>
+                    </div>
+                </a>
+                <a href='/projects'>
+                    <div className='MenuPoint'>
+                        <h1>Projets</h1>
+                        <h2>04</h2>
+                    </div>
+                </a>
+                <a href='/contacts'>
+                    <div className='MenuPoint'>
+                        <h1>Contacts</h1>
+                        <h2>05</h2>
+                    </div>
+                </a>
             </div>
         </div>
         <ListLogo />
-        <BottomBanner />
     </div>
   )
 }
