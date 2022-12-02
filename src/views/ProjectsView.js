@@ -2,7 +2,7 @@ import React from 'react';
 
 function ProjectsView() {
   return (
-    <div><h1>Projects</h1></div>
+    <div>Projects</div>
   )
 }
 
