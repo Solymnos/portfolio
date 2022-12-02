@@ -168,9 +168,24 @@
   height: 80px;
   width: 80px;
   margin: 20px;
+  padding: 5px;
 }
 
 .ListLogo>img:hover {
-  height: 100px;
-  width: 100px;
+  border: solid var(--main-color) 4px;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.ListLogo>a>img {
+  height: 80px;
+  width: 80px;
+  margin: 20px;
+  padding: 5px;
+}
+
+.ListLogo>a>img:hover {
+  border: solid var(--main-color) 4px;
+  border-radius: 5px;
+  margin: 15px;
 }
