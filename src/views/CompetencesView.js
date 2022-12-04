@@ -1,8 +1,12 @@
 import React from 'react';
-
+import ToolbarMenu
+ from '../components/ToolbarMenu';
 function CompetencesView() {
   return (
-    <div>Competences</div>
+    <div>
+      Competences
+      <ToolbarMenu />
+    </div>
   )
 }
 

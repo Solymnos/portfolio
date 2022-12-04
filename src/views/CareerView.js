@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import ToolbarMenu from '../components/ToolbarMenu';
 
 function CareerView() {
   return (
-    <div>Career</div>
+    <div>
+      Career
+      <ToolbarMenu />
+    </div>
+
   )
 }
 
-export default CareerView
+export default CareerView;
