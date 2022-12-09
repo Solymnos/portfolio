@@ -215,22 +215,22 @@ a {
 
 .ToolbarMenu {
   position: fixed;
-  top: 80px;
+  top: 100px;
   left: 80px;
-
   width: calc(100% - 160px);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 .ToolbarMenu>a>.ToolbarButton {
+  position: relative;
   display: inline-block;
   border: 5px solid var(--main-color);
-  margin-left: auto;
-  margin-right: auto;
   font-family: 'VCR';
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-left: 5%;
   font-weight: bold;
   font-size: 25px;
 }
