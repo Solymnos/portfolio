@@ -25,7 +25,7 @@ function HomeView() {
                 </a>
                 <a href='/career'>
                     <div className='MenuPoint'>
-                        <h1>Parcour</h1>
+                        <h1>Parcours</h1>
                         <h2>02</h2>
                     </div>
                 </a>

@@ -1,11 +1,12 @@
 import React from 'react';
-import ToolbarMenu from '../components/ToolbarMenu';
+import '../styles/ProjectsView.css';
 
 function ProjectsView() {
   return (
-    <div>
-      Projects
-      <ToolbarMenu />
+    <div className='ProjectsView'>
+      <div className='ProjectsViewTitle'>
+        <h1>Projets</h1>
+      </div>
     </div>
   )
 }

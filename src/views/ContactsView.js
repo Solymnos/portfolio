@@ -1,11 +1,12 @@
 import React from 'react';
-import ToolbarMenu from '../components/ToolbarMenu';
+import '../styles/ContactsView.css';
 
 function ContactsView() {
   return (
-    <div>
-      Contacts
-      <ToolbarMenu />
+    <div className='ContactsView'>
+      <div className='ContactsViewTitle'>
+        <h1>Contacts</h1>
+      </div>
     </div>
   )
 }

@@ -1,11 +1,12 @@
 import React from 'react';
-import ToolbarMenu
- from '../components/ToolbarMenu';
+import '../styles/CompetencesView.css';
+
 function CompetencesView() {
   return (
-    <div>
-      Competences
-      <ToolbarMenu />
+    <div className='CompetencesView'>
+      <div className='CompetencesViewTitle'>
+        <h1>Compétences</h1>
+      </div>
     </div>
   )
 }

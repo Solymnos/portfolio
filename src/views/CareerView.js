@@ -102,7 +102,7 @@ function CareerView() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: 'rgb(0, 0, 0, 0)', color: '#D7390A', border: '3px solid  #D7390A' , borderRadius: '15px', boxShadow : '0 0 0 0 #fff'}}
-          contentArrowStyle={{ borderRight: '7px solid  #D7390A', marginLeft: '7px' }}
+          contentArrowStyle={{ borderRight: '7px solid  #D7390A', marginRight: '7px' }}
           date="2015"
           iconStyle={{ background: '#0c0c0c', color: '#fff', boxShadow : '0 0 0 4px #D7390A, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05)' }}>
           <h3 className="vertical-timeline-element-title">Baccalauréat Science de l'Ingénieur</h3>

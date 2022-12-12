@@ -1,11 +1,11 @@
-.ProfileView {
+.CompetencesView {
     max-height: fit-content;
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-.ProfileViewText {
-    max-width: 1150px;
+.CompetencesViewTitle {
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     font-family: 'VCR', cursive;
@@ -14,20 +14,9 @@
     text-align: center;
 }
 
-.ProfileText {
-    text-align: justify;
-}
-
-.ProfileViewText>h1 
-{
+.CompetencesViewTitle>h1 {
     font-family: 'VCR', cursive;
     color: var(--main-color);
     font-size: 100px;
     margin-top: 0;
-}
-
-.ProfilePixelImg {
-    width: 450px;
-    float: right;
-    margin: 0 0 15px 30px;
 }

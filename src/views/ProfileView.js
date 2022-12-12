@@ -5,7 +5,7 @@ function ProfileView() {
   return (
     <div className='ProfileView'>
         <div className='ProfileViewText'>
-          <h1>Profil</h1>
+            <h1>Profil</h1>
           <div className='ProfileText'>
             <img className='ProfilePixelImg' src={pixelpp} alt='pppixel'></img>
             <p>Développeur passionné par les jeux vidéo et l'esport, j'ai acquis une solide expérience dans la création de jeux et d'applications interactives. Doté d'un esprit créatif et d'un sens aigu de la logique, je suis capable de concevoir et de mettre en œuvre des solutions innovantes pour des projets complexes.</p>
