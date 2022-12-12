@@ -1,9 +1,12 @@
 import React from 'react'
 import '../styles/ProfileView.css';
-import pixelpp from '../assets/img/pixelpp.png'
+import pixelpp from '../assets/img/pixelpp.png';
+import Toolbar from '../components/Toolbar';
+
 function ProfileView() {
   return (
     <div className='ProfileView'>
+        <Toolbar />
         <div className='ProfileViewText'>
             <h1>Profil</h1>
           <div className='ProfileText'>

@@ -16,6 +16,11 @@
   src: url(./assets/fonts/VCR.ttf);
 }
 
+::-webkit-scrollbar { 
+  display: none; 
+  }
+  
+
 :root {
   --main-color-background: #0C0C0C;
   --main-color : #D7390A;

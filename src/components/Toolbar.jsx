@@ -1,0 +1,23 @@
+import React from 'react';
+import '../styles/Toolbar.css';
+import homeIcon from '../assets/img/homeIcon.png';
+import profileIcon from '../assets/img/profileIcon.png';
+import careerIcon from '../assets/img/careerIcon.png';
+import competencesIcon from '../assets/img/competencesIcon.png';
+import projectsIcon from '../assets/img/projectsIcon.png';
+import contactsIcon from '../assets/img/contactsIcon.png';
+
+function Toolbar() {
+  return (
+    <div className='Toolbar'>
+        <img src={homeIcon} alt='icon link to home page'/>
+        <img src={profileIcon} alt='icon link to profile page'/>
+        <img src={careerIcon} alt='icon link to career page'/>
+        <img src={competencesIcon} alt='icon link to competences page'/>
+        <img src={projectsIcon} alt='icon link to projects page'/>
+        <img src={contactsIcon} alt='icon link to contacts page'/>
+    </div>
+  )
+}
+
+export default Toolbar;

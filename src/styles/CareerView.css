@@ -1,7 +1,9 @@
 .CareerView {
-    max-height: fit-content;
+    overflow-y: overlay;
     padding-top: 100px;
     padding-bottom: 100px;
+    width: 100%;
+    min-width: 100%;
 }
 
 .CareerViewText {
