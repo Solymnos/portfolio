@@ -9,13 +9,17 @@
     height: 330px;
     padding: 7px;
     columns: 1;
-    align-items: center;
-    display: block;
+    display: flex;
+    flex-flow: column;
 }
 
-.Toolbar>img {
+.Toolbar>a {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.Toolbar>a>img {
     width: 40px;
-    display: block;
-    position: relative;
-    margin: auto 0;
+    margin-top: auto;
+    margin-bottom: auto;
 }

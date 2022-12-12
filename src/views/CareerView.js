@@ -2,10 +2,12 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import '../styles/CareerView.css'
+import Toolbar from '../components/Toolbar';
 
 function CareerView() {
   return (
     <div className='CareerView'>
+      <Toolbar />
       <div className='CareerViewText'>
         <h1>Parcours</h1>
       </div>
