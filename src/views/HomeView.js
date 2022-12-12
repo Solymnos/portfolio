@@ -1,5 +1,6 @@
 import React from 'react';
 import ListLogo from '../components/ListLogo';
+import '../styles/HomeView.css';
 
 function HomeView() {
   return (

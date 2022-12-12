@@ -1,0 +1,31 @@
+.CareerView {
+    max-height: fit-content;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.CareerViewText {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'VCR', cursive;
+    color: var(--second-color);
+    font-size: 28px;
+    text-align: center;
+}
+
+.CareerViewText>h1 
+{
+    font-family: 'VCR', cursive;
+    color: var(--main-color);
+    font-size: 100px;
+    margin-top: 0;
+}
+
+.Timeline {
+    font-family: 'VCR', cursive;
+}
+
+.TimelineElementText {
+    color : #fff;
+}

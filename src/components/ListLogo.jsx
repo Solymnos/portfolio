@@ -2,6 +2,7 @@ import React from 'react';
 import logoLinkedin from '../assets/img/logoLinkedin.png';
 import logoGithub from '../assets/img/logoGithub.png';
 import logoCV from '../assets/img/logoCV.png';
+import '../styles/ListLogo.css';
 
 function ListLogo() {
   return (

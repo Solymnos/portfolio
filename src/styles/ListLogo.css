@@ -1,0 +1,35 @@
+.ListLogo {
+  height: 100px;
+  width: 600px;
+  position: fixed;
+  left: 50%;
+  margin-left: -300px;
+  bottom: 110px;
+  text-align: center;
+}
+
+.ListLogo>img {
+  height: 80px;
+  width: 80px;
+  margin: 20px;
+  padding: 5px;
+}
+
+.ListLogo>img:hover {
+  border: solid var(--main-color) 4px;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.ListLogo>a>img {
+  height: 80px;
+  width: 80px;
+  margin: 20px;
+  padding: 5px;
+}
+
+.ListLogo>a>img:hover {
+  border: solid var(--main-color) 4px;
+  border-radius: 5px;
+  margin: 15px;
+}

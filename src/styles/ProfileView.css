@@ -1,0 +1,28 @@
+.ProfileView {
+    max-height: fit-content;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.ProfileViewText {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'VCR', cursive;
+    color: var(--second-color);
+    font-size: 28px;
+}
+
+.ProfileViewText>h1 
+{
+    font-family: 'VCR', cursive;
+    color: var(--main-color);
+    font-size: 100px;
+    margin-top: 0;
+}
+
+.ProfilePixelImg {
+    width: 450px;
+    float: right;
+    margin: 0 0 50px 20px;
+}
