@@ -20,3 +20,16 @@
     font-size: 100px;
     margin-top: 0;
 }
+
+.ProjectsView>.LeftPanel {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    margin-left: 100px;
+}
+
+.Slide {
+    background-color: var(--main-color-background);
+    width: 100%;
+    height: 100%;
+}
