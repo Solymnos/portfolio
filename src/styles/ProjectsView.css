@@ -88,6 +88,7 @@
     border: 3px solid var(--main-color);
     flex: 1 1 auto;
     border-radius: 25px;
+    flex-flow: column;
 }
 
 .ProjectData>h1 {
@@ -95,9 +96,37 @@
     color: var(--main-color);
     font-size: 50px;
     margin-top: 0;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
     height: fit-content;
     margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.ProjectData>.Content {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+
+.ProjectData>.Content>.Description {
+    font-family: 'VCR', cursive;
+    color: var(--second-color);
+    width: 50%;
+    margin: 15px;
+    text-align: justify;
+}
+
+.Details {
+    display: flex;
+    margin: 15px;
+    width: calc(50% - 66px);
+    flex-flow: column;
+}
+
+.Sources {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-top: auto;
 }

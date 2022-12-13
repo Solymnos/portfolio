@@ -1,0 +1,9 @@
+.UsedTechnologies 
+{
+    border: 3px var(--second-color) dashed;
+    font-family: 'VCR', cursive;
+    color: var(--second-color);
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
