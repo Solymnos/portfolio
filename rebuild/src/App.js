@@ -3,7 +3,7 @@ import './App.css';
 import HomePage from './pages/HomePage';
 import ProfilePage from './pages/ProfilePage';
 import CareerPage from './pages/CareerPage';
-import CompentencesPage from './pages/CompetencesPage';
+import CompetencesPage from './pages/CompetencesPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ContactsPage from './pages/ContactsPage';
 import ErrorPage from './pages/ErrorPage';
@@ -18,12 +18,13 @@ function App() {
           <Route path='/home' element={<HomePage />} />
           <Route path='/profile' element={<ProfilePage />} />
           <Route path='/career' element={<CareerPage />} />
-          <Route path='/competences' element={<CompentencesPage />} />
+          <Route path='/competences' element={<CompetencesPage />} />
           <Route path='/projects' element={<ProjectsPage />} />
           <Route path='/contacts' element={<ContactsPage />} />
           <Route path='*' element={<ErrorPage />} />
         </Routes>
       </Router>
+
     </React.Fragment>
   );
 }
