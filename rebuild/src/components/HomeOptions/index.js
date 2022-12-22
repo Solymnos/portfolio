@@ -9,7 +9,6 @@ const HomeOptions = () =>
 {
     const [ThemeImg, setThemeImg] = useState(MoonIcon);
     const [LanguageImg, setLanguageImg] = useState(FrenchIcon);
-    const [Language, setLanguage] = useState('fr');
 
     const changeTheme = () =>
     {
@@ -24,16 +23,12 @@ const HomeOptions = () =>
 
     const changeLanguage = () =>
     {
-        let loc = "http://localhost:3000/";
-
         if (LanguageImg === FrenchIcon)
         {
             setLanguageImg(EnglishIcon);
-            setLanguage('en');
         } else 
         {
             setLanguageImg(FrenchIcon);
-            setLanguage('fr');
         }
     }
 
