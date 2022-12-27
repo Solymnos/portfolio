@@ -3,7 +3,7 @@ import React from 'react';
 const HomeLinkButton = ({name, img, link, isDownload}) =>
 {
     return (
-        <div className='flex hover:border-4 hover:border-solid hover:border-primary m-2 hover:m-0'>
+        <div className='flex rounded-2xl border-transparent border-4 border-solid hover:border-primary'>
             {
                 isDownload ? (
                     <a href={link} target='_blank' rel='noreferrer' download>
