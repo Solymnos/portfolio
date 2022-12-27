@@ -7,11 +7,11 @@ const HomeLinkButton = ({name, img, link, isDownload}) =>
             {
                 isDownload ? (
                     <a href={link} target='_blank' rel='noreferrer' download>
-                        <img className='w-14 m-5' src={img} alt='extern icon'></img>
+                        <img className='w-20 m-5' src={img} alt='extern icon'></img>
                     </a>
                 ) : (
                     <a href={link} target='_blank' rel='noreferrer'>
-                        <img className='w-14 m-5' src={img} alt='extern icon'></img>
+                        <img className='w-20 m-5' src={img} alt='extern icon'></img>
                     </a>
                 )
             }
