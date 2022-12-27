@@ -1,6 +1,7 @@
 import React from 'react';
 import HomeMenuItem from '../components/HomeMenuItem';
 import HomeOptions from '../components/HomeOptions';
+import HomeExternLinks from '../components/HomeExternLinks';
 import {useTranslation} from 'react-i18next';
 
 const HomePage = () => 
@@ -18,6 +19,7 @@ const HomePage = () =>
                     {MenuItems.map(item => <HomeMenuItem name={item.name} url={item.url} id={item.id}/>)}
                 </div>
             </div>
+            <HomeExternLinks />
             <HomeOptions />
         </React.Fragment>
     )
