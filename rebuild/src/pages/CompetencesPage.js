@@ -1,10 +1,14 @@
 import React from 'react';
+import Toolbar from '../components/Toolbar';
 
 const CompetencesPage = () =>
 {
     return (
         <React.Fragment>
-            Competences
+            <Toolbar />
+            <div className='pt-24 pb-24 bg-bgDark text-center ml-auto mx-auto'>
+                <h1 className='text-primary text-8xl font-bold'>Compétences</h1>
+            </div>
         </React.Fragment>
     )
 }
