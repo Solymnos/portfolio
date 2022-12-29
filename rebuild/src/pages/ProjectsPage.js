@@ -53,8 +53,8 @@ const ProjectsPage = () =>
                 <div className='pt-24 pb-24 bg-bgDark text-center ml-auto mx-auto'>
                     <h1 className='text-primary text-8xl font-bold'>Projets</h1>
                 </div>
-                <div className='bg-bgDark grid grid-cols-2 w-full h-full'>
-                    <div className='w-full h-full bg-plum'>
+                <div className='bg-bgDark grid grid-cols-2 w-full'>
+                    <div className='w-full bg-plum'>
                         oui ouo
                     </div>
                 </div>
