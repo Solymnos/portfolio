@@ -56,8 +56,8 @@ const Projects =
 
 const ProjectsPage = () => {
 
-    const [projectIndex, setProjectIndex] = useState(0);
-    //const projectIndex = 0;
+    //const [projectIndex, setProjectIndex] = useState(0);
+    const projectIndex = 0;
 
     const onTransition = (data) =>
     {
