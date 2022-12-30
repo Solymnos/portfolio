@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Toolbar from '../components/Toolbar';
 import GithubIcon from '../assets/imgs/GithubIcon.png';
+import ProjectsIcon from '../assets/imgs/ProjectsIcon.png';
+import ProjectData from '../components/ProjectData';
+import AwesomeSlider from 'react-awesome-slider';
+import Style from 'react-awesome-slider/dist/styles.css';
+import AwesomeSliderStyles from 'react-awesome-slider/src/styled/open-animation/open-animation.scss';
 
-const projects =
+const Projects =
 [
   { 
     name : 'Projet 0',  
@@ -12,6 +17,7 @@ const projects =
       icon : GithubIcon, 
       url :'https://google.com',
     }],
+    icon : ProjectsIcon,
   },
   { 
     name : 'Projet 1',  
@@ -24,6 +30,7 @@ const projects =
       icon : GithubIcon, 
       url :'https://google.com',
     }],
+    icon : ProjectsIcon,
   },
   { 
     name : 'Projet 2',  
@@ -33,6 +40,7 @@ const projects =
       icon : GithubIcon, 
       url :'https://google.com',
     }],
+    icon : ProjectsIcon,
   },
   { 
     name : 'Projet 3',  
@@ -42,28 +50,63 @@ const projects =
       icon : GithubIcon, 
       url :'https://google.com',
     }],
+    icon : ProjectsIcon,
   },
 ]
 
-const ProjectsPage = () =>
-{
+const ProjectsPage = () => {
+
+    const [projectIndex, setProjectIndex] = useState(0);
+    //const projectIndex = 0;
+
+    const onTransition = (data) =>
+    {
+        console.log('ui');
+        //setProjectIndex(data.nextIndex);
+    }
+
     return (
-        <React.Fragment>
-            <div className='bg-bgDark w-screen h-screen'>
-                <div className='pt-24 pb-24 bg-bgDark text-center ml-auto mx-auto'>
+        <div>
+            
+            <div class="bg-bgDark flex flex-col h-screen w-screen">
+                <Toolbar />
+                <div className='text-center pt-24 pb-24'>
                     <h1 className='text-primary text-8xl font-bold'>Projets</h1>
                 </div>
-                <div className='bg-bgDark grid grid-cols-2 w-full'>
-                    <div className='w-full bg-plum'>
-                        oui ouo
+                <div className='h-full grid grid-cols-2'>
+                    <div className='h-full ml-36'>
+                        <AwesomeSlider cssModule={[AwesomeSliderStyles, Style]} bullets={false} onTransitionStart={onTransition}>
+                            {Projects.map(project =>
+                                <div className=' bg-bgDark h-full w-full flex'>
+                                    <img className='m-auto w-60' src={project.icon} alt='icon of the project'/>
+                                </div>
+                            )}
+                        </AwesomeSlider>
                     </div>
-                </div>
+                    <div className='bg-bgDark h-full'>
+                        <ProjectData project={Projects[projectIndex]}/>
+                    </div>
+                </div>   
             </div>
-        </React.Fragment>
+        </div>
     )
 }
 
 export default ProjectsPage;
+
+// <div class="flex-1 w-2/3 mx-auto p-4 text-lg  h-full shadow-lg bg-green-400">
+
+/*<div className='bg-bgDark w-screen h-screen'>
+                <div className='pt-24 pb-24 bg-bgDark text-center ml-auto mx-auto'>
+                    <h1 className='text-primary text-8xl font-bold'>Projets</h1>
+                </div>
+                <div className='bg-bgDark grid grid-cols-2 w-full'>
+                    <div className='bg-plum grow h-full'>
+                        oui ouo
+                    </div>
+                </div>
+            </div>*/
+
 /**
  * <Toolbar />
             <div className='pt-24 pb-24 bg-bgDark text-center ml-auto mx-auto'>
