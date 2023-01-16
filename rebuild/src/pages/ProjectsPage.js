@@ -56,13 +56,11 @@ const Projects =
 
 const ProjectsPage = () => {
 
-    //const [projectIndex, setProjectIndex] = useState(0);
-    const projectIndex = 0;
+    const [projectIndex, setProjectIndex] = useState(0);
 
     const onTransition = (data) =>
     {
-        console.log('ui');
-        //setProjectIndex(data.nextIndex);
+        setProjectIndex(data.nextIndex);
     }
 
     return (
@@ -75,7 +73,7 @@ const ProjectsPage = () => {
                 </div>
                 <div className='h-full grid grid-cols-2'>
                     <div className='h-full ml-36'>
-                        <AwesomeSlider cssModule={[AwesomeSliderStyles, Style]} bullets={false} onTransitionStart={onTransition}>
+                        <AwesomeSlider cssModule={<style>--organic-arrow-thickness: 28px;</style>} bullets={false} onTransitionStart={onTransition}>
                             {Projects.map(project =>
                                 <div className=' bg-bgDark h-full w-full flex'>
                                     <img className='m-auto w-60' src={project.icon} alt='icon of the project'/>
