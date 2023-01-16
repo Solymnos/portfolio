@@ -6,6 +6,8 @@ import ProjectData from '../components/ProjectData';
 import AwesomeSlider from 'react-awesome-slider';
 import Style from 'react-awesome-slider/dist/styles.css';
 import AwesomeSliderStyles from 'react-awesome-slider/src/styled/open-animation/open-animation.scss';
+import AwesomeSliderStyle from '../styles/slider-style.scss';
+
 
 const Projects =
 [
@@ -73,7 +75,7 @@ const ProjectsPage = () => {
                 </div>
                 <div className='h-full grid grid-cols-2'>
                     <div className='h-full ml-36'>
-                        <AwesomeSlider cssModule={<style>--organic-arrow-thickness: 28px;</style>} bullets={false} onTransitionStart={onTransition}>
+                        <AwesomeSlider cssModule={AwesomeSliderStyle} bullets={false} onTransitionStart={onTransition}>
                             {Projects.map(project =>
                                 <div className=' bg-bgDark h-full w-full flex'>
                                     <img className='m-auto w-60' src={project.icon} alt='icon of the project'/>
