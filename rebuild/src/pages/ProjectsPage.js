@@ -2,15 +2,12 @@ import React, { useState } from 'react';
 import Toolbar from '../components/Toolbar';
 import GithubIcon from '../assets/imgs/GithubIcon.png';
 import ProjectsIcon from '../assets/imgs/ProjectsIcon.png';
-import ProjectData from '../components/ProjectData';
-import AwesomeSlider from 'react-awesome-slider';
-//import Style from 'react-awesome-slider/dist/styles.css';
-//import AwesomeSliderStyles from 'react-awesome-slider/src/styled/open-animation/open-animation.scss';
-//import AwesomeSliderStyle from '../styles/slider-style.scss';
-import Slider from "react-animated-slider"
-import '../styles/styles.css'
-//import '../styles/slider-animations.css'
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import '../styles/ProjectsPage.css';
 
 const Projects =
 [
@@ -61,26 +58,97 @@ const Projects =
 
 const ProjectsPage = () => {
 
-  return(
-    <div class='flex flex-col h-screen w-screen bg-blue-500'>
-      <div class="bg-bgDark pt-24 pb-24 text-center">
-        <h1 class='text-primary text-8xl font-bold'>Projets</h1>
-      </div>
-       <Slider className="slider-wrapper">
-          {Projects.map((project, index) => (
-            <div key={index} className="slider-content" style={{ background: `no-repeat center center` }}>
-              <div className="inner">
-                <h1>{project.name}</h1>
-                <p>{project.desc}</p>
-              </div>
-            </div>
-          ))}
-        </Slider>
+    const [projectIndex, setProjectIndex] = useState(0);
+
+    const onTransition = (data) =>
+    {
+        setProjectIndex(data.nextIndex);
+    }
+
+    return (
       
-    </div>
-  )
+      <div class="flex flex-col h-screen bg-bgDark">
+        <Toolbar />
+        <div className='text-center pt-24 pb-24'>
+          <h1 className='text-primary text-8xl font-bold'>Projets</h1>
+        </div>
+        <div class="flex justify-center flex-row items-center flex-grow">
+          <div className='flex w-full flex-grow h-full pl-56 pr-24'>
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={30}
+              loop={true}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Pagination, Navigation]}
+              onSlideChange={() => {
+                console.log('slide change')
+                
+              }}
+              onActiveIndexChange={(swiperCore) => {
+                console.log(swiperCore.activeIndex);
+              }}
+              className="mySwiper">
+                {Projects.map(project =>
+                  <SwiperSlide>
+                    <h1>{project.name}</h1>
+                  </SwiperSlide>
+                  )}
+              </Swiper>
+          </div>
+        </div>
+      </div>
+       /* <div>
+            
+            <div class="bg-bgDark flex flex-col h-screen w-screen">
+                <Toolbar />
+                <div className='text-center pt-24 pb-24'>
+                    <h1 className='text-primary text-8xl font-bold'>Projets</h1>
+                </div>
+                <div className='h-full grid grid-cols-2'>
+                    <div className='h-full ml-36'>
+                        <AwesomeSlider cssModule={AwesomeSliderStyle} bullets={false} onTransitionStart={onTransition}>
+                            {Projects.map(project =>
+                                <div className=' bg-bgDark h-full w-full flex'>
+                                    <img className='m-auto w-60' src={project.icon} alt='icon of the project'/>
+                                </div>
+                            )}
+                        </AwesomeSlider>
+                    </div>
+                    <div className='bg-bgDark h-full'>
+                        <ProjectData project={Projects[projectIndex]}/>
+                    </div>
+                </div>   
+            </div>
+        </div>*/
+    )
 }
 
 export default ProjectsPage;
 
-// à tester https://github.com/erichbehrens/react-animated-slider/blob/master/src/pages/examples/Custom.js
+// <div class="flex-1 w-2/3 mx-auto p-4 text-lg  h-full shadow-lg bg-green-400">
+
+/*<div className='bg-bgDark w-screen h-screen'>
+                <div className='pt-24 pb-24 bg-bgDark text-center ml-auto mx-auto'>
+                    <h1 className='text-primary text-8xl font-bold'>Projets</h1>
+                </div>
+                <div className='bg-bgDark grid grid-cols-2 w-full'>
+                    <div className='bg-plum grow h-full'>
+                        oui ouo
+                    </div>
+                </div>
+            </div>*/
+
+/**
+ * <Toolbar />
+            <div className='pt-24 pb-24 bg-bgDark text-center ml-auto mx-auto'>
+                <h1 className='text-primary text-8xl font-bold'>Projets</h1>
+            </div>
+            <div className='bg-bgDark grid grid-cols-2'>
+                <div className='w-full h-full bg-plum'>
+                    oui ouo
+                </div>
+            </div>
+ */
