@@ -3,8 +3,8 @@ import copy
 
 SPECIAL = '00000000000000000010000100001100110'
 CLASSIC = '11111111111111111111111111111111111'
-NB_POSSIBILITY = 34359738367;
-
+NB_POSSIBILITY = 33554431;
+#33 554 431
 class team:
     def __init__(self, name, id, win, per_win, per_lose, mr_win, hth):
         self.name = name;
@@ -48,15 +48,15 @@ def init_teams():
     LIST_TEAMS.append(team('GAMEWARD', 'GW', 8, 0, 0, 1, copy.deepcopy(hth)))
     hth = [];
     hth.append(opponent('GW', 0));
-    hth.append(opponent('GO', 0));
-    hth.append(opponent('SLY', 1));
+    hth.append(opponent('GO', 1));
+    hth.append(opponent('SLY', 2));
     hth.append(opponent('VITB', 0));
     hth.append(opponent('BDSA', 1));
     hth.append(opponent('AEG', 2));
     hth.append(opponent('KC', 1));
     hth.append(opponent('BKR', 1));
     hth.append(opponent('IZI', 2));
-    LIST_TEAMS.append(team('LDLC OL', 'LDLC', 8, 0, 0, 2, copy.deepcopy(hth)))
+    LIST_TEAMS.append(team('LDLC OL', 'LDLC', 10, 0, 0, 4, copy.deepcopy(hth)))
     hth = [];
     hth.append(opponent('GW', 0));
     hth.append(opponent('LDLC', 1));
@@ -65,9 +65,9 @@ def init_teams():
     hth.append(opponent('BDSA', 0));
     hth.append(opponent('AEG', 1));
     hth.append(opponent('KC', 1));
-    hth.append(opponent('BKR', 0));
+    hth.append(opponent('BKR', 1));
     hth.append(opponent('IZI', 1));
-    LIST_TEAMS.append(team('TEAM GO', 'GO', 7, 0, 0, 2, copy.deepcopy(hth)))
+    LIST_TEAMS.append(team('TEAM GO', 'GO', 8, 0, 0, 3, copy.deepcopy(hth)))
     hth = [];
     hth.append(opponent('GW', 1));
     hth.append(opponent('LDLC', 0));
@@ -80,7 +80,7 @@ def init_teams():
     hth.append(opponent('IZI', 0));
     LIST_TEAMS.append(team('SOLARY', 'SLY', 7, 0, 0, 2, copy.deepcopy(hth)))
     hth = [];
-    hth.append(opponent('GW', 1));
+    hth.append(opponent('GW', 2));
     hth.append(opponent('LDLC', 1));
     hth.append(opponent('GO', 0));
     hth.append(opponent('SLY', 0));
@@ -89,18 +89,18 @@ def init_teams():
     hth.append(opponent('KC', 0));
     hth.append(opponent('BKR', 1));
     hth.append(opponent('IZI', 1));
-    LIST_TEAMS.append(team('VITALITY BEE', 'VITB', 6, 0, 0, 0, copy.deepcopy(hth)))
+    LIST_TEAMS.append(team('VITALITY BEE', 'VITB', 7, 0, 0, 1, copy.deepcopy(hth)))
     hth = [];
     hth.append(opponent('GW', 0));
     hth.append(opponent('LDLC', 0));
     hth.append(opponent('GO', 1));
     hth.append(opponent('SLY', 0));
-    hth.append(opponent('VITB', 0));
+    hth.append(opponent('VITB', 1));
     hth.append(opponent('AEG', 1));
-    hth.append(opponent('KC', 1));
+    hth.append(opponent('KC', 2));
     hth.append(opponent('BKR', 1));
     hth.append(opponent('IZI', 2));
-    LIST_TEAMS.append(team('BDS ACADEMY', 'BDSA', 6, 0, 0, 1, copy.deepcopy(hth)))
+    LIST_TEAMS.append(team('BDS ACADEMY', 'BDSA', 8, 0, 0, 3, copy.deepcopy(hth)))
     hth = [];
     hth.append(opponent('GW', 0));
     hth.append(opponent('LDLC', 0));
@@ -109,9 +109,9 @@ def init_teams():
     hth.append(opponent('VITB', 0));
     hth.append(opponent('BDSA', 1));
     hth.append(opponent('KC', 1));
-    hth.append(opponent('BKR', 1));
+    hth.append(opponent('BKR', 2));
     hth.append(opponent('IZI', 1));
-    LIST_TEAMS.append(team('AEGIS', 'AEG', 4, 0, 0, 0, copy.deepcopy(hth)))
+    LIST_TEAMS.append(team('AEGIS', 'AEG', 6, 0, 0, 2, copy.deepcopy(hth)))
     hth = [];
     hth.append(opponent('GW', 1));
     hth.append(opponent('LDLC', 0));
@@ -121,8 +121,8 @@ def init_teams():
     hth.append(opponent('BDSA', 0));
     hth.append(opponent('AEG', 0));
     hth.append(opponent('BKR', 1));
-    hth.append(opponent('IZI', 1));
-    LIST_TEAMS.append(team('KARMINE CORP', 'KC', 4, 0, 0, 1, copy.deepcopy(hth)))
+    hth.append(opponent('IZI', 2));
+    LIST_TEAMS.append(team('KARMINE CORP', 'KC', 5, 0, 0, 2, copy.deepcopy(hth)))
     hth = [];
     hth.append(opponent('GW', 0));
     hth.append(opponent('LDLC', 0));
@@ -138,13 +138,13 @@ def init_teams():
     hth.append(opponent('GW', 0));
     hth.append(opponent('LDLC', 0));
     hth.append(opponent('GO', 0));
-    hth.append(opponent('SLY', 1));
+    hth.append(opponent('SLY', 2));
     hth.append(opponent('VITB', 0));
     hth.append(opponent('BDSA', 0));
     hth.append(opponent('AEG', 0));
     hth.append(opponent('KC', 0));
     hth.append(opponent('BKR', 0));
-    LIST_TEAMS.append(team('IZIDREAM', 'IZI', 1, 0, 0, 0, copy.deepcopy(hth)))
+    LIST_TEAMS.append(team('IZIDREAM', 'IZI', 2, 0, 0, 2, copy.deepcopy(hth)))
 
 def init_incoming_matches():
     LIST_INCOMING_MATCHES.append(match('BKR','AEG'))
@@ -285,7 +285,7 @@ for x in tqdm(range(NB_POSSIBILITY)):
     #print(code)
     simulate_matchs(code);
     for TEAM in LIST_TEAMS :
-        #print (TEAM.name, TEAM.per_win, TEAM.per_lose, sep=' ');
+        print (TEAM.name, TEAM.per_win, TEAM.per_lose, sep=' ');
         per = (TEAM.per_win)/(TEAM.per_win + TEAM.per_lose);
-        #print('{:.4%}'.format(per))
+        print('{:.4%}'.format(per))
     
