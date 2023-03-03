@@ -1,12 +1,6 @@
 import React, { useState } from 'react';
-import Toolbar from '../components/Toolbar';
 import GithubIcon from '../assets/imgs/GithubIcon.png';
 import ProjectsIcon from '../assets/imgs/ProjectsIcon.png';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
 import '../styles/ProjectsPage.css';
 
 const Projects =
