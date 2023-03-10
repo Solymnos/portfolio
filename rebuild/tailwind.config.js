@@ -13,6 +13,13 @@ module.exports = {
         'bgDark' : '#0C0C0C',
         'plum' : '#FADADD',
         'primary-transparent' : '#D7390A88'
+      },
+      spacing : {
+        'card-size' : '500px'
+      },
+      flex : {
+        '12' : '1.2',
+        '08' : '0.8',
       }
     },
   },
